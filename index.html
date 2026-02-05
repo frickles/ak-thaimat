@@ -1044,10 +1044,11 @@
       font-family: var(--font-heading);
       font-size: 4rem;
       color: var(--gold);
-      opacity: 0.3;
+      opacity: 0.15;
       position: absolute;
-      top: 12px;
-      left: 24px;
+      top: 8px;
+      right: 24px;
+      left: auto;
       line-height: 1;
     }
 
@@ -1056,6 +1057,8 @@
       font-size: 0.9rem;
       letter-spacing: 2px;
       margin-bottom: 12px;
+      position: relative;
+      z-index: 1;
     }
 
     .review-text {
@@ -1681,89 +1684,158 @@
           <p class="section-subtitle" style="margin:0 auto;">Autentiska smaker från Thailand — tillagade med färska ingredienser och kärlek.</p>
         </div>
 
-        <div class="menu-grid">
-          <!-- Grön Curry -->
+        <!-- Curry -->
+        <h3 class="reveal" style="color:var(--gold-light);font-family:var(--font-heading);font-size:1.6rem;margin-top:48px;margin-bottom:8px;position:relative;z-index:1;">Curry</h3>
+        <p class="reveal" style="color:rgba(255,248,240,0.4);font-size:0.9rem;margin-bottom:24px;position:relative;z-index:1;">Serveras med ris. Kycklingfilé med kokosmjölk, currypasta, bamboo &amp; grönsaker.</p>
+        <div class="menu-grid" style="grid-template-columns:repeat(2,1fr);">
           <div class="menu-card reveal reveal-delay-1">
-            <div class="menu-card-img">
-              <!-- PLACEHOLDER: Byt mot riktigt foto -->
-              <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=600&q=80" alt="Grön curry med kyckling serverad med ris" loading="lazy">
-            </div>
             <div class="menu-card-body">
-              <h3>Grön Curry med Kyckling</h3>
-              <p>Krämig kokosmjölkscurry med thai-basilika och grönsaker</p>
-              <span class="dish-tag">Populär</span>
+              <h3>Röd Curry <span style="float:right;color:var(--gold-light);">100 kr</span></h3>
+              <p>Kycklingfilé med currypasta, bamboo, kokosmjölk och grönsaker</p>
+              <span class="dish-tag">&#127798;</span>
             </div>
           </div>
-
-          <!-- Pad Thai -->
           <div class="menu-card reveal reveal-delay-2">
-            <div class="menu-card-img">
-              <!-- PLACEHOLDER: Byt mot riktigt foto -->
-              <img src="https://images.unsplash.com/photo-1559314809-0d155014e29e?w=600&q=80" alt="Klassisk pad thai med risnudlar och jordnötter" loading="lazy">
-            </div>
             <div class="menu-card-body">
-              <h3>Pad Thai</h3>
-              <p>Klassiska stekta risnudlar med tamarindsås och jordnötter</p>
-              <span class="dish-tag">Klassiker</span>
+              <h3>Grön Curry <span style="float:right;color:var(--gold-light);">100 kr</span></h3>
+              <p>Kycklingfilé med currypasta, bamboo, kokosmjölk och grönsaker</p>
+              <span class="dish-tag">&#127798;&#127798; Populär</span>
             </div>
           </div>
-
-          <!-- Tom Kha Gai -->
-          <div class="menu-card reveal reveal-delay-3">
-            <div class="menu-card-img">
-              <!-- PLACEHOLDER: Byt mot riktigt foto -->
-              <img src="https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=600&q=80" alt="Tom kha gai kokosmjölkssoppa med kyckling" loading="lazy">
-            </div>
-            <div class="menu-card-body">
-              <h3>Tom Kha Gai</h3>
-              <p>Kokosmjölkssoppa med galangal, citrongräs och kyckling</p>
-              <span class="dish-tag">Soppa</span>
-            </div>
-          </div>
-
-          <!-- Friterad Kyckling -->
           <div class="menu-card reveal reveal-delay-1">
-            <div class="menu-card-img">
-              <!-- PLACEHOLDER: Byt mot riktigt foto -->
-              <img src="https://images.unsplash.com/photo-1562967914-608f82629710?w=600&q=80" alt="Friterad kyckling med smakrik jordnötssås" loading="lazy">
-            </div>
             <div class="menu-card-body">
-              <h3>Friterad Kyckling</h3>
-              <p>Krispig kyckling med hemlagad jordnötssås</p>
-              <span class="dish-tag">Favorit</span>
+              <h3>Paneang Curry <span style="float:right;color:var(--gold-light);">100 kr</span></h3>
+              <p>Kycklingfilé med currypasta, bamboo, kokosmjölk och grönsaker</p>
+              <span class="dish-tag">&#127798;</span>
             </div>
           </div>
-
-          <!-- Nam Tok Moo -->
           <div class="menu-card reveal reveal-delay-2">
-            <div class="menu-card-img">
-              <!-- PLACEHOLDER: Byt mot riktigt foto -->
-              <img src="https://images.unsplash.com/photo-1569058242567-93de6f36f8e6?w=600&q=80" alt="Nam tok moo - Thai grillad fläsksallad" loading="lazy">
-            </div>
             <div class="menu-card-body">
-              <h3>Nam Tok Moo</h3>
-              <p>Kryddig grillad fläsksallad med lime och myntablad</p>
-              <span class="dish-tag">Kryddigt</span>
-            </div>
-          </div>
-
-          <!-- Friterad Banan -->
-          <div class="menu-card reveal reveal-delay-3">
-            <div class="menu-card-img">
-              <!-- PLACEHOLDER: Byt mot riktigt foto -->
-              <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&q=80" alt="Friterad banan med glass och sirap som efterrätt" loading="lazy">
-            </div>
-            <div class="menu-card-body">
-              <h3>Friterad Banan</h3>
-              <p>Med vaniljglass och sirap — vår mest älskade efterrätt</p>
-              <span class="dish-tag">Efterrätt</span>
+              <h3>Massaman Curry <span style="float:right;color:var(--gold-light);">100 kr</span></h3>
+              <p>Kycklingfilé med currypasta, potatis, gullök, jordnötter och kokosmjölk</p>
+              <span class="dish-tag">&#127798; Mild</span>
             </div>
           </div>
         </div>
 
-        <div class="menu-footer reveal">
-          <p class="price-note">Prisklass: 100–200 kr per person</p>
-          <p>Komplett meny finns i restaurangen — välkommen in!</p>
+        <!-- Wok & Stekta rätter -->
+        <h3 class="reveal" style="color:var(--gold-light);font-family:var(--font-heading);font-size:1.6rem;margin-top:48px;margin-bottom:8px;position:relative;z-index:1;">Wok &amp; Stekta Rätter</h3>
+        <p class="reveal" style="color:rgba(255,248,240,0.4);font-size:0.9rem;margin-bottom:24px;position:relative;z-index:1;">Nytillagade wokar med färska ingredienser.</p>
+        <div class="menu-grid" style="grid-template-columns:repeat(2,1fr);">
+          <div class="menu-card reveal reveal-delay-1">
+            <div class="menu-card-body">
+              <h3>Pad Mhed Mamuang <span style="float:right;color:var(--gold-light);">100 kr</span></h3>
+              <p>Kycklingfilé med chiliolja, cashewnötter och grönsaker</p>
+              <span class="dish-tag">&#127798;&#127798;</span>
+            </div>
+          </div>
+          <div class="menu-card reveal reveal-delay-2">
+            <div class="menu-card-body">
+              <h3>Pad Kra Pau Moo <span style="float:right;color:var(--gold-light);">80 kr</span></h3>
+              <p>Wokad fläsk med chilli, vitlök, basilika och grönsaker</p>
+              <span class="dish-tag">&#127798;&#127798;&#127798; Kryddigt</span>
+            </div>
+          </div>
+          <div class="menu-card reveal reveal-delay-1">
+            <div class="menu-card-body">
+              <h3>Pad Prik Geang Kai <span style="float:right;color:var(--gold-light);">80 kr</span></h3>
+              <p>Wokad kycklingfilé med röd curry pasta och grönsaker</p>
+              <span class="dish-tag">&#127798;&#127798;</span>
+            </div>
+          </div>
+          <div class="menu-card reveal reveal-delay-2">
+            <div class="menu-card-body">
+              <h3>Pad Nua Nam Man Hoi <span style="float:right;color:var(--gold-light);">85 kr</span></h3>
+              <p>Wokad nötkött med fläsk, chilli, vitlök, grönsaker och ostronsås</p>
+              <span class="dish-tag">&#127798;&#127798;&#127798;</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skaldjur -->
+        <h3 class="reveal" style="color:var(--gold-light);font-family:var(--font-heading);font-size:1.6rem;margin-top:48px;margin-bottom:8px;position:relative;z-index:1;">Skaldjur</h3>
+        <p class="reveal" style="color:rgba(255,248,240,0.4);font-size:0.9rem;margin-bottom:24px;position:relative;z-index:1;">Med tiger räkor och havets smaker.</p>
+        <div class="menu-grid" style="grid-template-columns:repeat(2,1fr);">
+          <div class="menu-card reveal reveal-delay-1">
+            <div class="menu-card-body">
+              <h3>Pad Khi Mao Tale <span style="float:right;color:var(--gold-light);">90 kr</span></h3>
+              <p>Wokade räkor, bläckfisk, musslor med thai whisky och grönsaker</p>
+              <span class="dish-tag">&#127798;&#127798;&#127798; Havets smak</span>
+            </div>
+          </div>
+          <div class="menu-card reveal reveal-delay-2">
+            <div class="menu-card-body">
+              <h3>Pad Prew Wan Kung <span style="float:right;color:var(--gold-light);">90 kr</span></h3>
+              <p>Wokade tiger räkor med ananas, grönsaker och sötsur sås</p>
+              <span class="dish-tag">Sötsurt</span>
+            </div>
+          </div>
+          <div class="menu-card reveal reveal-delay-1">
+            <div class="menu-card-body">
+              <h3>Pad Thai Kung <span style="float:right;color:var(--gold-light);">90 kr</span></h3>
+              <p>Wokade tiger räkor med risnudlar, pad thai sås och grönsaker</p>
+              <span class="dish-tag">Klassiker</span>
+            </div>
+          </div>
+          <div class="menu-card reveal reveal-delay-2">
+            <div class="menu-card-body">
+              <h3>Kow Pad Kung <span style="float:right;color:var(--gold-light);">90 kr</span></h3>
+              <p>Wokade tiger räkor med ris, ägg och grönsaker</p>
+              <span class="dish-tag">Stekt ris</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sallader & Soppor -->
+        <h3 class="reveal" style="color:var(--gold-light);font-family:var(--font-heading);font-size:1.6rem;margin-top:48px;margin-bottom:8px;position:relative;z-index:1;">Sallader, Soppor &amp; Snacks</h3>
+        <div class="menu-grid" style="grid-template-columns:repeat(2,1fr);">
+          <div class="menu-card reveal reveal-delay-1">
+            <div class="menu-card-body">
+              <h3>Yam Wun Sen <span style="float:right;color:var(--gold-light);">80 kr</span></h3>
+              <p>Fläskkött med glasnudlar, tomat, limejuice, koriander och sallad</p>
+              <span class="dish-tag">&#127798;&#127798;</span>
+            </div>
+          </div>
+          <div class="menu-card reveal reveal-delay-2">
+            <div class="menu-card-body">
+              <h3>Nam Tuk Moo <span style="float:right;color:var(--gold-light);">80 kr</span></h3>
+              <p>Fläskkött med torkad chilli, koriander, lime och sallad</p>
+              <span class="dish-tag">&#127798;&#127798;</span>
+            </div>
+          </div>
+          <div class="menu-card reveal reveal-delay-1">
+            <div class="menu-card-body">
+              <h3>Lab Moo <span style="float:right;color:var(--gold-light);">80 kr</span></h3>
+              <p>Fläskfärs med torkad chilli, koriander, lime och sallad</p>
+              <span class="dish-tag">&#127798;&#127798;</span>
+            </div>
+          </div>
+          <div class="menu-card reveal reveal-delay-2">
+            <div class="menu-card-body">
+              <h3>Peek Kai Tod <span style="float:right;color:var(--gold-light);">80 kr</span></h3>
+              <p>Friterade kycklingvingar med ris och sötsur sås</p>
+              <span class="dish-tag">Favorit</span>
+            </div>
+          </div>
+          <div class="menu-card reveal reveal-delay-1">
+            <div class="menu-card-body">
+              <h3>Som Tam Thai <span style="float:right;color:var(--gold-light);">90 kr</span></h3>
+              <p>Papayasallad med färsk chilli, tomat, tiger räkor, lime och jordnötter</p>
+              <span class="dish-tag">&#127798;&#127798; Fräsch</span>
+            </div>
+          </div>
+          <div class="menu-card reveal reveal-delay-2">
+            <div class="menu-card-body">
+              <h3>Tom Yam Kung <span style="float:right;color:var(--gold-light);">90 kr</span></h3>
+              <p>Soppa med tiger räkor, tilaka, tomat, lime och thaikryddor</p>
+              <span class="dish-tag">&#127798;&#127798; Soppa</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-footer reveal" style="position:relative;z-index:1;">
+          <p class="price-note">Avhämtning: 80–100 kr per rätt</p>
+          <p>Meny hämtad från Å-K Thaimats Facebook. Priser kan ha ändrats.</p>
         </div>
       </div>
     </section>
