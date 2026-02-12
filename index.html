@@ -570,12 +570,12 @@
       align-items: center;
       gap: 10px;
       padding: 16px 32px;
-      background: transparent;
+      background: var(--navy);
       color: var(--cream);
       font-family: var(--font-body);
       font-size: 1rem;
       font-weight: 600;
-      border: 2px solid rgba(255, 248, 240, 0.3);
+      border: 2px solid var(--navy);
       border-radius: 100px;
       cursor: pointer;
       transition: all 0.3s;
@@ -583,8 +583,8 @@
     }
 
     .btn-secondary:hover {
-      border-color: var(--cream);
-      background: rgba(255, 248, 240, 0.08);
+      background: var(--navy-light);
+      border-color: var(--navy-light);
       transform: translateY(-2px);
     }
 
@@ -873,7 +873,7 @@
     }
 
     .menu-footer .price-note {
-      color: var(--gold-light);
+      color: var(--red);
       font-weight: 600;
       font-size: 1rem;
     }
@@ -1627,13 +1627,13 @@
         <p class="hero-sub">Lunchbuffé, à la carte &amp; avhämtning — välkommen till oss på Kungsgatan&nbsp;10!</p>
 
         <div class="hero-actions">
-          <a href="#meny" class="btn-primary">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-            Se Menyn
-          </a>
-          <a href="tel:+46705539919" class="btn-secondary">
+          <a href="tel:+46705539919" class="btn-primary">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             Ring &amp; Beställ
+          </a>
+          <a href="#meny" class="btn-secondary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+            Se Menyn
           </a>
         </div>
 
@@ -1696,33 +1696,33 @@
         </div>
 
         <!-- Curry (1–4) -->
-        <h3 class="reveal" style="color:var(--gold-light);font-family:var(--font-heading);font-size:1.6rem;margin-top:48px;margin-bottom:8px;position:relative;z-index:1;">Curry</h3>
+        <h3 class="reveal" style="color:var(--red);font-family:var(--font-heading);font-size:1.6rem;margin-top:48px;margin-bottom:8px;position:relative;z-index:1;">Curry</h3>
         <p class="reveal" style="color:rgba(255,248,240,0.4);font-size:0.9rem;margin-bottom:24px;position:relative;z-index:1;">Kycklingfilé med kokosmjölk, currypasta, bamboo &amp; grönsaker. Serveras med ris.</p>
         <div class="menu-grid" style="grid-template-columns:repeat(2,1fr);">
           <div class="menu-card reveal reveal-delay-1">
             <div class="menu-card-body">
-              <h3>Röd Curry <span style="float:right;color:var(--gold-light);">100 kr</span></h3>
+              <h3>Röd Curry <span style="float:right;color:var(--red);">100 kr</span></h3>
               <p>Kycklingfilé med currypasta, bamboo, kokosmjölk och grönsaker</p>
               <span class="dish-tag">&#127798;</span>
             </div>
           </div>
           <div class="menu-card reveal reveal-delay-2">
             <div class="menu-card-body">
-              <h3>Grön Curry <span style="float:right;color:var(--gold-light);">100 kr</span></h3>
+              <h3>Grön Curry <span style="float:right;color:var(--red);">100 kr</span></h3>
               <p>Kycklingfilé med currypasta, bamboo, kokosmjölk och grönsaker</p>
               <span class="dish-tag">&#127798;&#127798; Populär</span>
             </div>
           </div>
           <div class="menu-card reveal reveal-delay-1">
             <div class="menu-card-body">
-              <h3>Paneang Curry <span style="float:right;color:var(--gold-light);">100 kr</span></h3>
+              <h3>Paneang Curry <span style="float:right;color:var(--red);">100 kr</span></h3>
               <p>Kycklingfilé med currypasta, bamboo, kokosmjölk och grönsaker</p>
               <span class="dish-tag">&#127798;</span>
             </div>
           </div>
           <div class="menu-card reveal reveal-delay-2">
             <div class="menu-card-body">
-              <h3>Massaman Curry <span style="float:right;color:var(--gold-light);">100 kr</span></h3>
+              <h3>Massaman Curry <span style="float:right;color:var(--red);">100 kr</span></h3>
               <p>Kycklingfilé med currypasta, potatis, gullök, jordnötter och kokosmjölk</p>
               <span class="dish-tag">&#127798; Mild</span>
             </div>
@@ -1730,54 +1730,54 @@
         </div>
 
         <!-- Wok & Kyckling (5, 8, 11–14) -->
-        <h3 class="reveal" style="color:var(--gold-light);font-family:var(--font-heading);font-size:1.6rem;margin-top:48px;margin-bottom:8px;position:relative;z-index:1;">Wok &amp; Stekta Rätter</h3>
+        <h3 class="reveal" style="color:var(--red);font-family:var(--font-heading);font-size:1.6rem;margin-top:48px;margin-bottom:8px;position:relative;z-index:1;">Wok &amp; Stekta Rätter</h3>
         <p class="reveal" style="color:rgba(255,248,240,0.4);font-size:0.9rem;margin-bottom:24px;position:relative;z-index:1;">Nytillagade wokar med färska ingredienser.</p>
         <div class="menu-grid" style="grid-template-columns:repeat(2,1fr);">
           <div class="menu-card reveal reveal-delay-1">
             <div class="menu-card-body">
-              <h3>Pad Mhed Mamuang <span style="float:right;color:var(--gold-light);">100 kr</span></h3>
+              <h3>Pad Mhed Mamuang <span style="float:right;color:var(--red);">100 kr</span></h3>
               <p>Kycklingfilé med chiliolja, cashewnötter och grönsaker</p>
               <span class="dish-tag">&#127798;&#127798;</span>
             </div>
           </div>
           <div class="menu-card reveal reveal-delay-2">
             <div class="menu-card-body">
-              <h3>Pad Nua Nam Man Hoi <span style="float:right;color:var(--gold-light);">120 kr</span></h3>
+              <h3>Pad Nua Nam Man Hoi <span style="float:right;color:var(--red);">120 kr</span></h3>
               <p>Wokad nötkött med fläsk, chilli, vitlök, grönsaker och ostronsås</p>
               <span class="dish-tag">&#127798;&#127798;&#127798; Nötkött</span>
             </div>
           </div>
           <div class="menu-card reveal reveal-delay-1">
             <div class="menu-card-body">
-              <h3>Pad Kra Pau Moo <span style="float:right;color:var(--gold-light);">100 kr</span></h3>
+              <h3>Pad Kra Pau Moo <span style="float:right;color:var(--red);">100 kr</span></h3>
               <p>Wokade fläskkött med chilli, vitlök, basilika och grönsaker</p>
               <span class="dish-tag">&#127798;&#127798;&#127798; Kryddigt</span>
             </div>
           </div>
           <div class="menu-card reveal reveal-delay-2">
             <div class="menu-card-body">
-              <h3>Pad Prik Geang Kai <span style="float:right;color:var(--gold-light);">100 kr</span></h3>
+              <h3>Pad Prik Geang Kai <span style="float:right;color:var(--red);">100 kr</span></h3>
               <p>Wokade kycklingfilé med röd curry pasta och grönsaker</p>
               <span class="dish-tag">&#127798;&#127798;</span>
             </div>
           </div>
           <div class="menu-card reveal reveal-delay-1">
             <div class="menu-card-body">
-              <h3>Spaghetti Pad Khi Mau Kai <span style="float:right;color:var(--gold-light);">100 kr</span></h3>
+              <h3>Spaghetti Pad Khi Mau Kai <span style="float:right;color:var(--red);">100 kr</span></h3>
               <p>Wokade spaghetti med kycklingfilé, thai whisky, fläsk, chilli och grönsaker</p>
               <span class="dish-tag">&#127798;&#127798;</span>
             </div>
           </div>
           <div class="menu-card reveal reveal-delay-2">
             <div class="menu-card-body">
-              <h3>Pad Pak Roam <span style="float:right;color:var(--gold-light);">100 kr</span></h3>
+              <h3>Pad Pak Roam <span style="float:right;color:var(--red);">100 kr</span></h3>
               <p>Wokade grönsaker med soya sås, vitlök och ostronsås</p>
               <span class="dish-tag">&#127807; Vegetarisk</span>
             </div>
           </div>
           <div class="menu-card reveal reveal-delay-1">
             <div class="menu-card-body">
-              <h3>Friterad Kyckling <span style="float:right;color:var(--gold-light);">100 kr</span></h3>
+              <h3>Friterad Kyckling <span style="float:right;color:var(--red);">100 kr</span></h3>
               <p>Friterad kyckling med sötsur sås, serveras med ris</p>
               <span class="dish-tag">Populär</span>
             </div>
@@ -1785,40 +1785,40 @@
         </div>
 
         <!-- Skaldjur (6–7, 9–10, 15) -->
-        <h3 class="reveal" style="color:var(--gold-light);font-family:var(--font-heading);font-size:1.6rem;margin-top:48px;margin-bottom:8px;position:relative;z-index:1;">Skaldjur &amp; Räkor</h3>
+        <h3 class="reveal" style="color:var(--red);font-family:var(--font-heading);font-size:1.6rem;margin-top:48px;margin-bottom:8px;position:relative;z-index:1;">Skaldjur &amp; Räkor</h3>
         <p class="reveal" style="color:rgba(255,248,240,0.4);font-size:0.9rem;margin-bottom:24px;position:relative;z-index:1;">Tiger räkor och havets smaker.</p>
         <div class="menu-grid" style="grid-template-columns:repeat(2,1fr);">
           <div class="menu-card reveal reveal-delay-1">
             <div class="menu-card-body">
-              <h3>Pad Khi Mao Tale <span style="float:right;color:var(--gold-light);">130 kr</span></h3>
+              <h3>Pad Khi Mao Tale <span style="float:right;color:var(--red);">130 kr</span></h3>
               <p>Wokade räkor, bläckfisk, musslor med thai whisky och grönsaker</p>
               <span class="dish-tag">&#127798;&#127798;&#127798; Havets smak</span>
             </div>
           </div>
           <div class="menu-card reveal reveal-delay-2">
             <div class="menu-card-body">
-              <h3>Pad Prew Wan Kung <span style="float:right;color:var(--gold-light);">130 kr</span></h3>
+              <h3>Pad Prew Wan Kung <span style="float:right;color:var(--red);">130 kr</span></h3>
               <p>Wokade tiger räkor med ananas, grönsaker och sötsur sås</p>
               <span class="dish-tag">Sötsurt</span>
             </div>
           </div>
           <div class="menu-card reveal reveal-delay-1">
             <div class="menu-card-body">
-              <h3>Pad Thai Kung <span style="float:right;color:var(--gold-light);">130 kr</span></h3>
+              <h3>Pad Thai Kung <span style="float:right;color:var(--red);">130 kr</span></h3>
               <p>Wokade tiger räkor med risnudlar, pad thai sås och grönsaker</p>
               <span class="dish-tag">Klassiker</span>
             </div>
           </div>
           <div class="menu-card reveal reveal-delay-2">
             <div class="menu-card-body">
-              <h3>Kow Pad Kung <span style="float:right;color:var(--gold-light);">130 kr</span></h3>
+              <h3>Kow Pad Kung <span style="float:right;color:var(--red);">130 kr</span></h3>
               <p>Wokade tiger räkor med ris, ägg och grönsaker</p>
               <span class="dish-tag">Stekt ris</span>
             </div>
           </div>
           <div class="menu-card reveal reveal-delay-1">
             <div class="menu-card-body">
-              <h3>Kung Chup Peang Tod <span style="float:right;color:var(--gold-light);">90 kr</span></h3>
+              <h3>Kung Chup Peang Tod <span style="float:right;color:var(--red);">90 kr</span></h3>
               <p>Friterade tiger räkor med ris och sötsur sås</p>
               <span class="dish-tag">Friterad</span>
             </div>
@@ -1826,38 +1826,38 @@
         </div>
 
         <!-- Vårrullar, Spett & Sallader (16–20) -->
-        <h3 class="reveal" style="color:var(--gold-light);font-family:var(--font-heading);font-size:1.6rem;margin-top:48px;margin-bottom:8px;position:relative;z-index:1;">Vårrullar, Spett &amp; Sallader</h3>
+        <h3 class="reveal" style="color:var(--red);font-family:var(--font-heading);font-size:1.6rem;margin-top:48px;margin-bottom:8px;position:relative;z-index:1;">Vårrullar, Spett &amp; Sallader</h3>
         <div class="menu-grid" style="grid-template-columns:repeat(2,1fr);">
           <div class="menu-card reveal reveal-delay-1">
             <div class="menu-card-body">
-              <h3>Vårrullar <span style="float:right;color:var(--gold-light);">100 kr</span></h3>
+              <h3>Vårrullar <span style="float:right;color:var(--red);">100 kr</span></h3>
               <p>Wokat fläskkött med grönsaker och glasnudlar</p>
             </div>
           </div>
           <div class="menu-card reveal reveal-delay-2">
             <div class="menu-card-body">
-              <h3>Kyckling Spett <span style="float:right;color:var(--gold-light);">100 kr</span></h3>
+              <h3>Kyckling Spett <span style="float:right;color:var(--red);">100 kr</span></h3>
               <p>Kycklingspett med jordnötssås, serveras med ris</p>
               <span class="dish-tag">Populär</span>
             </div>
           </div>
           <div class="menu-card reveal reveal-delay-1">
             <div class="menu-card-body">
-              <h3>Yam Taly <span style="float:right;color:var(--gold-light);">130 kr</span></h3>
+              <h3>Yam Taly <span style="float:right;color:var(--red);">130 kr</span></h3>
               <p>Tigerräkor, bläckfisk och musslor med tomat, koriander, limejuice och fläsk chilli</p>
               <span class="dish-tag">&#127798;&#127798; Skaldjurssallad</span>
             </div>
           </div>
           <div class="menu-card reveal reveal-delay-2">
             <div class="menu-card-body">
-              <h3>Yam Wun Sen <span style="float:right;color:var(--gold-light);">100 kr</span></h3>
+              <h3>Yam Wun Sen <span style="float:right;color:var(--red);">100 kr</span></h3>
               <p>Fläskkött med glasnudlar, tomat, limejuice, koriander, sallad och lök</p>
               <span class="dish-tag">&#127798;&#127798;</span>
             </div>
           </div>
           <div class="menu-card reveal reveal-delay-1">
             <div class="menu-card-body">
-              <h3>Nam Tuk Moo <span style="float:right;color:var(--gold-light);">100 kr</span></h3>
+              <h3>Nam Tuk Moo <span style="float:right;color:var(--red);">100 kr</span></h3>
               <p>Fläskkött med torkad chilli, koriander, lime, sallad och lök</p>
               <span class="dish-tag">&#127798;&#127798;</span>
             </div>
