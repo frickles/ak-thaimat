@@ -102,7 +102,7 @@
 
 **Hook:** Restaurangen har otroligt bra betyg (4.4/5, 380 recensioner) men ingen hemsida — nya kunder som söker "thai mat söderhamn" missar dem helt.
 
-⚠️ **Notering:** Ägarna pratar begränsad svenska — kan försvåra säljsamtal. Överväg enkel pitch via mail/SMS med preview-länk.
+⚠️ **Notering:** Ägarna pratar begränsad svenska — kan försvåra säljsamtal. Överväg enkel pitch via mail/SMS med demo-länk.
 
 **Förslag på mejl/samtal:**
 "Hej! Jag heter Kim och driver Claytop Media.
@@ -110,7 +110,7 @@
 Jag såg att ni har fantastiska betyg på Google (4.4 stjärnor!) men ingen egen hemsida. Många kunder söker efter 'thai mat söderhamn' och med en hemsida kan ni nå ännu fler.
 
 Vi har tagit fram ett förslag på hur en hemsida skulle kunna se ut:
-👉 preview-akthaimat.claytopmedia.se
+👉 demo-akthaimat.claytopmedia.se
 
 Helt förutsättningslöst - kika gärna och hör av er om ni är intresserade!
 

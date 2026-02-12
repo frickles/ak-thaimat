@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brandguide — Å-K Thaimat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #1B2D50;
+      --navy-deep: #0F1D35;
+      --navy-light: #2A4270;
+      --navy-muted: #3D5A8A;
+      --red: #C73E3E;
+      --red-hover: #D95252;
+      --red-deep: #A33030;
+      --gold: #C8952E;
+      --gold-light: #DABA6A;
+      --gold-muted: rgba(200, 149, 46, 0.15);
+      --cream: #FFF8F0;
+      --cream-mid: #F5EDE0;
+      --cream-dark: #E8DCCB;
+      --white: #FFFFFF;
+      --text-dark: #1B2D50;
+      --text-body: #3A4A64;
+      --text-muted: #7A8A9E;
+      --text-on-dark: #E8E0D6;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-heading: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--cream);
+      color: var(--text-body);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── MASTHEAD ── */
+    .masthead {
+      background: var(--navy-deep);
+      color: var(--cream);
+      padding: 2rem 2rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .masthead::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.04;
+      background-image:
+        repeating-linear-gradient(120deg, transparent, transparent 40px, rgba(199,62,62,1) 40px, rgba(199,62,62,1) 41px),
+        repeating-linear-gradient(60deg, transparent, transparent 40px, rgba(200,149,46,0.5) 40px, rgba(200,149,46,0.5) 41px);
+    }
+
+    .masthead-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .masthead-tag {
+      display: inline-block;
+      font-family: var(--font-body);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--red);
+      background: rgba(199, 62, 62, 0.12);
+      padding: 6px 14px;
+      border-radius: 100px;
+      margin-bottom: 1.5rem;
+    }
+
+    .masthead h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2.8rem, 6vw, 4.5rem);
+      font-weight: 600;
+      line-height: 1.1;
+      color: var(--cream);
+      margin-bottom: 0.5rem;
+    }
+
+    .masthead h1 em {
+      font-style: italic;
+      color: var(--red);
+    }
+
+    .masthead-sub {
+      font-size: 1.05rem;
+      color: var(--text-on-dark);
+      max-width: 520px;
+      margin-bottom: 2.5rem;
+      opacity: 0.75;
+    }
+
+    .masthead-divider {
+      height: 3px;
+      background: linear-gradient(90deg, var(--red), var(--gold), transparent);
+      border: none;
+      border-radius: 2px;
+    }
+
+    /* ── NAV ── */
+    .guide-nav {
+      background: var(--navy);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(255,248,240,0.08);
+    }
+
+    .guide-nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      gap: 0;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+
+    .guide-nav-inner::-webkit-scrollbar { display: none; }
+
+    .guide-nav a {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(255,248,240,0.45);
+      padding: 14px 20px;
+      white-space: nowrap;
+      transition: color 0.3s;
+      border-bottom: 2px solid transparent;
+    }
+
+    .guide-nav a:hover {
+      color: var(--cream);
+      border-bottom-color: var(--red);
+    }
+
+    /* ── SECTIONS ── */
+    section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+
+    .section-label {
+      font-family: var(--font-body);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-heading {
+      font-family: var(--font-heading);
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 600;
+      color: var(--text-dark);
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-desc {
+      max-width: 560px;
+      color: var(--text-muted);
+      margin-bottom: 2.5rem;
+      font-size: 0.95rem;
+    }
+
+    .divider {
+      border: none;
+      height: 1px;
+      background: var(--cream-dark);
+      margin: 0 2rem;
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ── DIRECTION / BEFORE-AFTER ── */
+    .direction-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .direction-card {
+      border-radius: 16px;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .direction-card--before {
+      background: #1A1A2E;
+      color: #FFF8F0;
+      border: 1px solid rgba(200,149,46,0.2);
+    }
+
+    .direction-card--before .direction-accent { color: #C8952E; }
+
+    .direction-card--after {
+      background: var(--navy-deep);
+      color: var(--cream);
+      border: 1px solid rgba(199,62,62,0.25);
+      box-shadow: 0 8px 40px rgba(27,45,80,0.2);
+    }
+
+    .direction-card--after .direction-accent { color: var(--red); }
+
+    .direction-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 100px;
+      margin-bottom: 1.25rem;
+    }
+
+    .direction-card--before .direction-badge {
+      background: rgba(200,149,46,0.15);
+      color: #C8952E;
+    }
+
+    .direction-card--after .direction-badge {
+      background: rgba(199,62,62,0.15);
+      color: var(--red);
+    }
+
+    .direction-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+    .direction-card p {
+      font-size: 0.9rem;
+      opacity: 0.7;
+      line-height: 1.7;
+    }
+
+    .direction-card ul {
+      list-style: none;
+      margin-top: 1rem;
+    }
+
+    .direction-card li {
+      font-size: 0.85rem;
+      padding: 6px 0;
+      opacity: 0.65;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .direction-card li:first-child { border-top: none; }
+
+    /* ── COLORS ── */
+    .color-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+    }
+
+    .color-chip {
+      border-radius: 14px;
+      overflow: hidden;
+      background: var(--white);
+      box-shadow: 0 2px 12px rgba(27,45,80,0.06);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .color-chip:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(27,45,80,0.1);
+    }
+
+    .color-swatch {
+      height: 100px;
+      position: relative;
+    }
+
+    .color-swatch::after {
+      content: attr(data-hex);
+      position: absolute;
+      bottom: 8px;
+      right: 10px;
+      font-family: var(--font-body);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      background: rgba(0,0,0,0.25);
+      color: white;
+      padding: 3px 8px;
+      border-radius: 6px;
+      backdrop-filter: blur(4px);
+    }
+
+    .color-info {
+      padding: 12px 14px;
+    }
+
+    .color-name {
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: var(--text-dark);
+    }
+
+    .color-use {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    /* ── TYPOGRAPHY ── */
+    .type-specimen {
+      margin-bottom: 2rem;
+    }
+
+    .type-row {
+      display: flex;
+      align-items: baseline;
+      gap: 2rem;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--cream-dark);
+    }
+
+    .type-meta {
+      flex-shrink: 0;
+      width: 140px;
+    }
+
+    .type-meta-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .type-meta-detail {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      opacity: 0.7;
+    }
+
+    .type-sample {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .type-sample--h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      font-weight: 600;
+      color: var(--text-dark);
+      line-height: 1.15;
+    }
+
+    .type-sample--h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+      font-weight: 600;
+      color: var(--text-dark);
+      line-height: 1.2;
+    }
+
+    .type-sample--h3 {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      line-height: 1.3;
+    }
+
+    .type-sample--body {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      color: var(--text-body);
+      line-height: 1.7;
+    }
+
+    .type-sample--small {
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .type-sample--label {
+      font-family: var(--font-body);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--red);
+    }
+
+    /* ── BUTTONS ── */
+    .btn-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .btn-grid-row {
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-grid-row-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    a { text-decoration: none; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 28px;
+      border-radius: 100px;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+      border: 2px solid transparent;
+    }
+
+    .btn--primary {
+      background: var(--red);
+      color: var(--white);
+      border-color: var(--red);
+    }
+
+    .btn--primary:hover {
+      background: var(--red-hover);
+      border-color: var(--red-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(199, 62, 62, 0.3);
+    }
+
+    .btn--secondary {
+      background: var(--navy);
+      color: var(--cream);
+      border-color: var(--navy);
+    }
+
+    .btn--secondary:hover {
+      background: var(--navy-light);
+      border-color: var(--navy-light);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(27, 45, 80, 0.25);
+    }
+
+    .btn--outline {
+      background: transparent;
+      color: var(--navy);
+      border-color: var(--navy);
+    }
+
+    .btn--outline:hover {
+      background: var(--navy);
+      color: var(--cream);
+      transform: translateY(-2px);
+    }
+
+    .btn--ghost {
+      background: transparent;
+      color: var(--red);
+      border-color: transparent;
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+
+    .btn--ghost:hover {
+      color: var(--red-deep);
+    }
+
+    .btn--ghost::after {
+      content: '→';
+      transition: transform 0.3s;
+    }
+
+    .btn--ghost:hover::after {
+      transform: translateX(4px);
+    }
+
+    /* Dark context */
+    .dark-context {
+      background: var(--navy-deep);
+      border-radius: 16px;
+      padding: 2rem;
+      margin-top: 1rem;
+    }
+
+    .dark-context .btn-grid-row-label {
+      color: rgba(255,248,240,0.4);
+    }
+
+    .btn--primary-on-dark {
+      background: var(--red);
+      color: var(--white);
+      border-color: var(--red);
+    }
+
+    .btn--primary-on-dark:hover {
+      background: var(--red-hover);
+      border-color: var(--red-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(199, 62, 62, 0.35);
+    }
+
+    .btn--outline-on-dark {
+      background: transparent;
+      color: var(--cream);
+      border-color: rgba(255,248,240,0.25);
+    }
+
+    .btn--outline-on-dark:hover {
+      background: rgba(255,248,240,0.08);
+      border-color: rgba(255,248,240,0.4);
+      transform: translateY(-2px);
+    }
+
+    .btn--gold-on-dark {
+      background: var(--gold);
+      color: var(--navy-deep);
+      border-color: var(--gold);
+    }
+
+    .btn--gold-on-dark:hover {
+      background: var(--gold-light);
+      border-color: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(200, 149, 46, 0.3);
+    }
+
+    /* ── CARDS ── */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 1.75rem;
+      box-shadow: 0 2px 16px rgba(27,45,80,0.05);
+      border: 1px solid rgba(27,45,80,0.06);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(27,45,80,0.1);
+    }
+
+    .card-icon {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .card-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 100px;
+      margin-top: 1rem;
+    }
+
+    .card-tag--red {
+      background: rgba(199,62,62,0.08);
+      color: var(--red);
+    }
+
+    .card-tag--navy {
+      background: rgba(27,45,80,0.08);
+      color: var(--navy);
+    }
+
+    /* ── MENU CARD (dark context) ── */
+    .menu-preview {
+      background: var(--navy-deep);
+      border-radius: 20px;
+      padding: 2.5rem;
+      margin-top: 1rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .menu-preview::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: repeating-linear-gradient(
+        -45deg, transparent, transparent 30px,
+        rgba(199, 62, 62, 1) 30px, rgba(199, 62, 62, 1) 31px
+      );
+    }
+
+    .menu-preview-header {
+      text-align: center;
+      margin-bottom: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .menu-preview-header .section-label { color: var(--gold); }
+
+    .menu-preview-header h3 {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      font-weight: 500;
+      color: var(--cream);
+      letter-spacing: 0.02em;
+    }
+
+    .menu-preview-header p {
+      color: rgba(255,248,240,0.5);
+      font-size: 0.9rem;
+      margin-top: 0.25rem;
+    }
+
+    .menu-card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .menu-card {
+      background: rgba(255,248,240,0.04);
+      border: 1px solid rgba(255,248,240,0.08);
+      border-radius: 14px;
+      padding: 1.25rem;
+      transition: all 0.3s;
+    }
+
+    .menu-card:hover {
+      background: rgba(255,248,240,0.07);
+      border-color: rgba(199,62,62,0.3);
+      transform: translateY(-2px);
+    }
+
+    .menu-card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 6px;
+    }
+
+    .menu-card h4 {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--cream);
+    }
+
+    .menu-card-price {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--red);
+      white-space: nowrap;
+    }
+
+    .menu-card-desc {
+      font-size: 0.82rem;
+      color: rgba(255,248,240,0.45);
+      line-height: 1.55;
+      margin-bottom: 10px;
+    }
+
+    .menu-card-tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .menu-tag {
+      font-size: 0.68rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 100px;
+      background: rgba(199, 62, 62, 0.12);
+      color: var(--red);
+    }
+
+    .menu-tag--mild {
+      background: rgba(200, 149, 46, 0.12);
+      color: var(--gold-light);
+    }
+
+    .menu-tag--popular {
+      background: rgba(45, 106, 79, 0.15);
+      color: #5CB88A;
+    }
+
+    /* ── FOOTER ── */
+    .guide-footer {
+      background: var(--navy-deep);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      color: rgba(255,248,240,0.35);
+      font-size: 0.8rem;
+    }
+
+    .guide-footer strong {
+      color: var(--cream);
+      font-weight: 600;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      section { padding: 3rem 1.25rem; }
+      .direction-grid { grid-template-columns: 1fr; }
+      .type-row { flex-direction: column; gap: 0.5rem; }
+      .type-meta { width: auto; }
+      .masthead { padding: 1.5rem 1.25rem 0; }
+    }
+
+    /* ── SCROLL ANIMATIONS ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <div class="masthead">
+    <div class="masthead-inner">
+      <span class="masthead-tag">Claytop Media — Brandguide</span>
+      <h1 style="font-family: var(--font-display); font-weight: 500; letter-spacing: 0.02em;">Å-K <em>Thaimat</em></h1>
+      <p class="masthead-sub">Visuell stilguide och designriktning för hemsidan. Baserad på restaurangens befintliga varumärke, skylt och identitet.</p>
+    </div>
+    <hr class="masthead-divider">
+  </div>
+
+  <!-- NAV -->
+  <nav class="guide-nav">
+    <div class="guide-nav-inner">
+      <a href="#riktning">Riktning</a>
+      <a href="#farger">Färger</a>
+      <a href="#typografi">Typografi</a>
+      <a href="#knappar">Knappar</a>
+      <a href="#kort">Kort</a>
+      <a href="#meny">Menyexempel</a>
+    </div>
+  </nav>
+
+  <!-- 01: DIRECTION -->
+  <section id="riktning" class="reveal">
+    <p class="section-label">01 — Designriktning</p>
+    <h2 class="section-heading">Från lyx till värme</h2>
+    <p class="section-desc">Den nuvarande designen använder guld och mörk charcoal — en lyxig profil som inte matchar Å-K Thaimats verkliga identitet. Den nya riktningen utgår från deras skylt, interiör och känsla.</p>
+
+    <div class="direction-grid">
+      <div class="direction-card direction-card--before">
+        <span class="direction-badge">Nuvarande</span>
+        <h3>Guld & <span class="direction-accent">Lyx</span></h3>
+        <p>Lyxig profil med guld som primärfärg. Ger fel förväntning — Å-K är en varm kvarterskrog, inte fine dining.</p>
+        <ul>
+          <li>Guld (#C8952E) som dominerande accent</li>
+          <li>Charcoal (#1A1A2E) — inte kopplat till skylten</li>
+          <li>Signalerar "exklusivt" snarare än "välkomnande"</li>
+          <li>Saknar koppling till Thailands färger</li>
+        </ul>
+      </div>
+
+      <div class="direction-card direction-card--after">
+        <span class="direction-badge">Ny riktning</span>
+        <h3>Mörkblå & <span class="direction-accent">Röd värme</span></h3>
+        <p>Baserad på restaurangens skylt (mörkblå med vit text) och interiörens röda accenter. Guld blir sekundärt — en diskret Thai-referens.</p>
+        <ul>
+          <li>Mörkblå (#1B2D50) — direkt från skylten</li>
+          <li>Röd accent (#C73E3E) — Thai-flaggan + interiören</li>
+          <li>Guld nedtonat till sekundär roll</li>
+          <li>Signalerar "hemtrevligt" och "autentiskt"</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- 02: COLORS -->
+  <section id="farger" class="reveal">
+    <p class="section-label">02 — Färgpalett</p>
+    <h2 class="section-heading">Färger</h2>
+    <p class="section-desc">Varje färg har ett tydligt syfte. Mörkblått bär varumärket, rött driver handling, guld ger Thai-känsla i detaljer.</p>
+
+    <div class="color-grid">
+      <div class="color-chip">
+        <div class="color-swatch" style="background: #1B2D50;" data-hex="#1B2D50"></div>
+        <div class="color-info">
+          <div class="color-name">Navy</div>
+          <div class="color-use">Header, dark sections, primär identitet</div>
+        </div>
+      </div>
+      <div class="color-chip">
+        <div class="color-swatch" style="background: #0F1D35;" data-hex="#0F1D35"></div>
+        <div class="color-info">
+          <div class="color-name">Navy Deep</div>
+          <div class="color-use">Footer, menysektion, djupare kontrast</div>
+        </div>
+      </div>
+      <div class="color-chip">
+        <div class="color-swatch" style="background: #C73E3E;" data-hex="#C73E3E"></div>
+        <div class="color-info">
+          <div class="color-name">Röd</div>
+          <div class="color-use">Primär accent, CTA-knappar, länkar</div>
+        </div>
+      </div>
+      <div class="color-chip">
+        <div class="color-swatch" style="background: #C8952E;" data-hex="#C8952E"></div>
+        <div class="color-info">
+          <div class="color-name">Guld</div>
+          <div class="color-use">Sekundär accent, priser, Thai-detaljer</div>
+        </div>
+      </div>
+      <div class="color-chip">
+        <div class="color-swatch" style="background: #FFF8F0;" data-hex="#FFF8F0"></div>
+        <div class="color-info">
+          <div class="color-name">Cream</div>
+          <div class="color-use">Ljus bakgrund, text på mörkt</div>
+        </div>
+      </div>
+      <div class="color-chip">
+        <div class="color-swatch" style="background: #F5EDE0;" data-hex="#F5EDE0"></div>
+        <div class="color-info">
+          <div class="color-name">Cream Mid</div>
+          <div class="color-use">Sektionsbakgrund, omdömen</div>
+        </div>
+      </div>
+      <div class="color-chip">
+        <div class="color-swatch" style="background: #3A4A64;" data-hex="#3A4A64"></div>
+        <div class="color-info">
+          <div class="color-name">Body Text</div>
+          <div class="color-use">Brödtext på ljus bakgrund</div>
+        </div>
+      </div>
+      <div class="color-chip">
+        <div class="color-swatch" style="background: #7A8A9E;" data-hex="#7A8A9E"></div>
+        <div class="color-info">
+          <div class="color-name">Muted</div>
+          <div class="color-use">Sekundär text, beskrivningar</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- 03: TYPOGRAPHY -->
+  <section id="typografi" class="reveal">
+    <p class="section-label">03 — Typografi</p>
+    <h2 class="section-heading">Typsnitt & skala</h2>
+    <p class="section-desc">Tre typsnitt med tydliga roller: Playfair Display matchar skyltens klassiska serif för logotypen. Cormorant Garamond för rubriker. DM Sans för kroppen.</p>
+
+    <div class="type-specimen">
+      <div class="type-row" style="background: var(--navy-deep); border-radius: 12px; padding: 1.5rem 2rem; border-bottom: none;">
+        <div class="type-meta">
+          <div class="type-meta-label" style="color: var(--gold);">Logotyp</div>
+          <div class="type-meta-detail" style="color: rgba(255,248,240,0.5);">Playfair Display 500 / 3.5rem</div>
+        </div>
+        <div class="type-sample" style="font-family: var(--font-display); font-size: clamp(2.5rem, 6vw, 3.5rem); font-weight: 500; letter-spacing: 0.02em; color: var(--cream); line-height: 1.2;">Å-K Thaimat</div>
+      </div>
+
+      <div class="type-row">
+        <div class="type-meta">
+          <div class="type-meta-label">H1</div>
+          <div class="type-meta-detail">Cormorant 600 / 3.2rem</div>
+        </div>
+        <div class="type-sample type-sample--h1">Autentisk Thaimat i <em style="color: var(--red); font-style: italic;">Söderhamn</em></div>
+      </div>
+
+      <div class="type-row">
+        <div class="type-meta">
+          <div class="type-meta-label">H2</div>
+          <div class="type-meta-detail">Cormorant 600 / 2.2rem</div>
+        </div>
+        <div class="type-sample type-sample--h2">Populära Rätter</div>
+      </div>
+
+      <div class="type-row">
+        <div class="type-meta">
+          <div class="type-meta-label">H3</div>
+          <div class="type-meta-detail">Cormorant 600 / 1.4rem</div>
+        </div>
+        <div class="type-sample type-sample--h3">Röd Curry med Kyckling</div>
+      </div>
+
+      <div class="type-row">
+        <div class="type-meta">
+          <div class="type-meta-label">Body</div>
+          <div class="type-meta-detail">DM Sans 400 / 1rem</div>
+        </div>
+        <div class="type-sample type-sample--body">Kycklingfilé med kokosmjölk, currypasta, bamboo och grönsaker. Serveras med ris. Söderhamns mest omtyckta thairestaurang sedan dag ett.</div>
+      </div>
+
+      <div class="type-row">
+        <div class="type-meta">
+          <div class="type-meta-label">Small</div>
+          <div class="type-meta-detail">DM Sans 400 / 0.85rem</div>
+        </div>
+        <div class="type-sample type-sample--small">Alla priser är inkl. moms. Allergier? Fråga personalen.</div>
+      </div>
+
+      <div class="type-row">
+        <div class="type-meta">
+          <div class="type-meta-label">Label</div>
+          <div class="type-meta-detail">DM Sans 600 / 0.7rem</div>
+        </div>
+        <div class="type-sample type-sample--label">Vår Meny</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- 04: BUTTONS -->
+  <section id="knappar" class="reveal">
+    <p class="section-label">04 — Knappar</p>
+    <h2 class="section-heading">Knappar & CTA</h2>
+    <p class="section-desc">Primär CTA i rött driver handling (ring, beställ). Sekundära knappar i mörkblått för navigation. Guld för speciella tillfällen.</p>
+
+    <div class="btn-grid-row">
+      <div class="btn-grid-row-label">Ljus bakgrund</div>
+      <div class="btn-grid">
+        <button class="btn btn--primary">Ring & Beställ</button>
+        <button class="btn btn--secondary">Se Menyn</button>
+        <button class="btn btn--outline">Kontakta Oss</button>
+        <button class="btn btn--ghost">Läs mer</button>
+      </div>
+    </div>
+
+    <div class="dark-context">
+      <div class="btn-grid-row">
+        <div class="btn-grid-row-label">Mörk bakgrund</div>
+        <div class="btn-grid">
+          <button class="btn btn--primary-on-dark">Ring & Beställ</button>
+          <button class="btn btn--gold-on-dark">Se Menyn</button>
+          <button class="btn btn--outline-on-dark">Kontakta Oss</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- 05: CARDS -->
+  <section id="kort" class="reveal">
+    <p class="section-label">05 — Komponenter</p>
+    <h2 class="section-heading">Kort & tjänster</h2>
+    <p class="section-desc">Kort används för tjänster, omdömen och information. Subtila skuggor, generös padding och hover-effekt.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon">🍜</div>
+        <h3>Lunchbuffé</h3>
+        <p>Nylagad buffé varje dag med minst 6 rätter. Salladsbar och dryck ingår.</p>
+        <span class="card-tag card-tag--red">Mån–Fre 11–14</span>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">📋</div>
+        <h3>À la carte</h3>
+        <p>Hela menyn tillgänglig för beställning. Curry, wok, skaldjur och klassiker.</p>
+        <span class="card-tag card-tag--navy">Alla dagar</span>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🥡</div>
+        <h3>Avhämtning</h3>
+        <p>Ring och beställ — vi har maten redo när du kommer. Snabbt och smidigt.</p>
+        <span class="card-tag card-tag--red">070-553 99 19</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- 06: MENU PREVIEW -->
+  <section id="meny" class="reveal">
+    <p class="section-label">06 — Menyexempel</p>
+    <h2 class="section-heading">Menykort i ny stil</h2>
+    <p class="section-desc">Så här ser menykorten ut med det nya färgschemat. Rött pris, guld för kategori-label, och subtila taggar.</p>
+
+    <div class="menu-preview">
+      <div class="menu-preview-header">
+        <p class="section-label" style="color: var(--gold);">Vår Meny</p>
+        <h3>Curry</h3>
+        <p>Kycklingfilé med kokosmjölk, currypasta, bamboo & grönsaker. Serveras med ris.</p>
+      </div>
+
+      <div class="menu-card-grid">
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <h4>Röd Curry</h4>
+            <span class="menu-card-price">100 kr</span>
+          </div>
+          <p class="menu-card-desc">Kycklingfilé med currypasta, bamboo, kokosmjölk och grönsaker</p>
+          <div class="menu-card-tags">
+            <span class="menu-tag">🌶️ Stark</span>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <h4>Grön Curry</h4>
+            <span class="menu-card-price">100 kr</span>
+          </div>
+          <p class="menu-card-desc">Kycklingfilé med currypasta, bamboo, kokosmjölk och grönsaker</p>
+          <div class="menu-card-tags">
+            <span class="menu-tag">🌶️ Stark</span>
+            <span class="menu-tag--popular menu-tag">Populär</span>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <h4>Paneang Curry</h4>
+            <span class="menu-card-price">100 kr</span>
+          </div>
+          <p class="menu-card-desc">Kycklingfilé med currypasta, bamboo, kokosmjölk och grönsaker</p>
+          <div class="menu-card-tags">
+            <span class="menu-tag">🌶️ Stark</span>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <h4>Massaman Curry</h4>
+            <span class="menu-card-price">100 kr</span>
+          </div>
+          <p class="menu-card-desc">Kycklingfilé med currypasta, potatis, gullök, jordnötter och kokosmjölk</p>
+          <div class="menu-card-tags">
+            <span class="menu-tag menu-tag--mild">🌶️ Mild</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="guide-footer">
+    <p>Stilguide för <strong>Å-K Thaimat</strong> — framtagen av Claytop Media, februari 2026</p>
+  </footer>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
